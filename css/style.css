@@ -76,7 +76,7 @@ div {
       #header .site-name #logo:hover {
         color: #777; }
     #header .site-name .description {
-      margin: .2em 0 0;
+      margin: 15px 0 0;
       color: #999; }
   #header #nav-menu {
     margin: 10px 0 -1px;
@@ -246,7 +246,7 @@ div {
     clear: left;
     font-size: 15px;
     line-height: 1.77;
-    color: #444;
+    color: #333;
     padding-top: 15px;
     text-align: justify;
     text-justify: distribute;
@@ -300,7 +300,7 @@ div {
         display: inline-block;
         margin: 0 5px;
         padding: 0px 5px;
-        background: #f7f8f8;
+        background: #282c34;
         font-family: Menlo, Consolas, monospace !important; }
       .post .post-content ul a, .post .post-content ol a {
         color: #01579f;
@@ -778,10 +778,10 @@ pre {
 /* syntax highlight*/
 figure.highlight,
 .codeblock {
-  background: #f7f8f8;
+  background: #282c34;
   margin: 10px 0;
-  line-height: 1.1em;
-  color: #333;
+  line-height: 1.5em;
+  color: #abb2bf;
   padding-top: 15px;
   overflow: hidden; }
   figure.highlight table,
@@ -812,10 +812,10 @@ figure.highlight,
     display: none; }
   figure.highlight figcaption,
   .codeblock figcaption {
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 15px 20px;
     margin: 0;
-    background: #f7f8f8;
+    background: #282c34;
     color: #999999; }
     figure.highlight figcaption a,
     .codeblock figcaption a {
@@ -823,7 +823,7 @@ figure.highlight,
       color: #01579f; }
   figure.highlight .gutter,
   .codeblock .gutter {
-    background: #f7f8f8;
+    background: #282c34;
     border-right: 1px solid #e6e6e6;
     padding: 0.3em 15px; }
   figure.highlight .code,
@@ -838,7 +838,7 @@ figure.highlight,
   figure.highlight .line,
   .codeblock .line {
     height: 1.3em;
-    font-size: 13px; }
+    font-size: 14px; }
 
 .gist .line,
 .gist .line-number {
@@ -847,13 +847,37 @@ figure.highlight,
   margin: 0 0 5px 0; }
 
 .highlight .comment {
-  color: #969896; }
+  color: #5c6370; }
 
 .highlight .string {
-  color: #183691; }
+  color: #98c379; }
 
 .highlight .keyword {
+  color: #c678dd; }
+
+.highlight.javascript .built_in,
+.highlight.javascript .title {
+  color: #61aeee; }
+
+.highlight.javascript .javadoc {
+  color: #5c6370; }
+
+.highlight.javascript .tag,
+.highlight.javascript .javadoctag {
   color: #a71d5d; }
+
+.highlight.javascript .tag .title {
+  color: #61aeee; }
+
+.highlight.javascript .regexp {
+  color: #df5000; }
+
+.highlight.javascript .literal,
+.highlight.javascript .number {
+  color: #d19a66; }
+
+.highlight.javascript .function {
+  color: #61aeee; }
 
 .highlight.apacheconf .code .common,
 .highlight.apacheconf .code .nomarkup,
@@ -878,13 +902,13 @@ figure.highlight,
   color: #0086b3; }
 
 .highlight.bash .code .variable {
-  color: #333; }
+  color: #abb2bf; }
 
 .highlight.bash .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.coffeescript .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.coffeescript .code .literal,
 .highlight.coffeescript .code .built_in,
@@ -910,7 +934,7 @@ figure.highlight,
 
 .highlight.cpp .code .title,
 .highlight.c .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.cpp .code .number,
 .highlight.cpp .code .built_in,
@@ -920,10 +944,10 @@ figure.highlight,
 
 .highlight.cs .code .preprocessor,
 .highlight.cs .code .preprocessor .keyword {
-  color: #333; }
+  color: #abb2bf; }
 
 .highlight.cs .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.cs .code .number,
 .highlight.cs .code .built_in {
@@ -942,17 +966,17 @@ figure.highlight,
 .highlight.css .code .hexcolor,
 .highlight.css .code .number,
 .highlight.css .code .function {
-  color: #0086b3; }
+  color: #d19a66; }
 
 .highlight.css .code .attr_selector,
 .highlight.css .code .value {
-  color: #333; }
+  color: #abb2bf; }
 
 .highlight.css .code .id,
 .highlight.css .code .class,
 .highlight.css .code .pseudo,
 .highlight.css .code .selector-pseudo {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.css .code .tag,
 .highlight.css .code .selector-tag {
@@ -960,7 +984,7 @@ figure.highlight,
 
 .highlight.diff .code .chunk,
 .highlight.diff .code .meta {
-  color: #795da3;
+  color: #61aeee;
   font-weight: bold; }
 
 .highlight.diff .code .addition {
@@ -973,7 +997,7 @@ figure.highlight,
 
 .highlight.http .code .attribute,
 .highlight.http .code .attr {
-  color: #183691; }
+  color: #98c379; }
 
 .highlight.http .code .literal {
   color: #0086b3; }
@@ -983,7 +1007,7 @@ figure.highlight,
 
 .highlight.ini .code .title,
 .highlight.ini .code .section {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.ini .code .setting,
 .highlight.ini .code .attr {
@@ -991,10 +1015,10 @@ figure.highlight,
 
 .highlight.ini .code .value,
 .highlight.ini .code .keyword {
-  color: #333; }
+  color: #abb2bf; }
 
 .highlight.java .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.java .code .javadoc {
   color: #969896; }
@@ -1005,44 +1029,47 @@ figure.highlight,
   color: #a71d5d; }
 
 .highlight.java .code .number {
-  color: #0086b3; }
+  color: #d19a66; }
 
 .highlight.java .code .params {
   color: #1d3e81; }
 
 .highlight.js .code .built_in,
 .highlight.js .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.js .code .javadoc {
-  color: #969896; }
+  color: #5c6370; }
 
 .highlight.js .code .tag,
 .highlight.js .code .javadoctag {
   color: #a71d5d; }
 
 .highlight.js .code .tag .title {
-  color: #333; }
+  color: #61aeee; }
 
 .highlight.js .code .regexp {
   color: #df5000; }
 
 .highlight.js .code .literal,
 .highlight.js .code .number {
-  color: #0086b3; }
+  color: #d19a66; }
+
+.highlight.js .code .function {
+  color: #61aeee; }
 
 .highlight.json .code .attribute {
-  color: #183691; }
+  color: #98c379; }
 
 .highlight.json .code .number,
 .highlight.json .code .literal {
   color: #0086b3; }
 
 .highlight.mak .code .constant {
-  color: #333; }
+  color: #abb2bf; }
 
 .highlight.mak .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.mak .code .keyword,
 .highlight.mak .code .meta-keyword {
@@ -1055,7 +1082,7 @@ figure.highlight,
 .highlight.md .code .blockquote,
 .highlight.md .code .quote,
 .highlight.md .code .section {
-  color: #183691; }
+  color: #98c379; }
 
 .highlight.md .code .link_reference,
 .highlight.md .code .symbol,
@@ -1075,10 +1102,10 @@ figure.highlight,
   color: #0086b3; }
 
 .highlight.nginx .code .regexp {
-  color: #183691; }
+  color: #98c379; }
 
 .highlight.nginx .code .variable {
-  color: #333; }
+  color: #abb2bf; }
 
 .highlight.objectivec .code .preprocessor,
 .highlight.objectivec .code .meta {
@@ -1088,10 +1115,10 @@ figure.highlight,
     color: #df5000; }
 
 .highlight.objectivec .code .meta-string {
-  color: #183691; }
+  color: #98c379; }
 
 .highlight.objectivec .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.objectivec .code .literal,
 .highlight.objectivec .code .number,
@@ -1099,10 +1126,10 @@ figure.highlight,
   color: #0086b3; }
 
 .highlight.perl .code .sub {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.perl .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.perl .code .regexp {
   color: #df5000; }
@@ -1119,19 +1146,19 @@ figure.highlight,
   color: #0086b3; }
 
 .highlight.php .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.python .code .decorator,
 .highlight.python .code .title,
 .highlight.python .code .meta {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.python .code .number {
   color: #0086b3; }
 
 .highlight.ruby .code .parent,
 .highlight.ruby .code .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.ruby .code .prompt,
 .highlight.ruby .code .constant,
@@ -1147,15 +1174,15 @@ figure.highlight,
   color: #0086b3; }
 
 .highlight.xml .tag, .highlight.html .tag {
-  color: #333; }
+  color: #abb2bf; }
 
 .highlight.xml .value, .highlight.html .value {
-  color: #183691; }
+  color: #98c379; }
 
 .highlight.xml .attribute,
 .highlight.xml .attr, .highlight.html .attribute,
 .highlight.html .attr {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.xml .title,
 .highlight.xml .name, .highlight.html .title,
@@ -1163,7 +1190,7 @@ figure.highlight,
   color: #63a35c; }
 
 .highlight.puppet .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.puppet .function {
   color: #0086b3; }
@@ -1193,7 +1220,7 @@ figure.highlight,
 .highlight.less .selector-id,
 .highlight.less .selector-class,
 .highlight.less .selector-tag {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.scss .tag,
 .highlight.scss .at_rule,
@@ -1207,7 +1234,7 @@ figure.highlight,
   color: #0086b3; }
 
 .highlight.scss .variable {
-  color: #333; }
+  color: #abb2bf; }
 
 .highlight.scss .built_in {
   color: #df5000; }
@@ -1218,7 +1245,7 @@ figure.highlight,
 .highlight.scss .preprocessor,
 .highlight.scss .selector-class,
 .highlight.scss .selector-id {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.scss .tag,
 .highlight.scss .selector-tag {
@@ -1244,7 +1271,7 @@ figure.highlight,
 .highlight.stylus .selector-id,
 .highlight.stylus .selector-pseudo,
 .highlight.stylus .selector-class {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.go .typename {
   color: #a71d5d; }
@@ -1257,7 +1284,7 @@ figure.highlight,
   color: #a71d5d; }
 
 .highlight.swift .title {
-  color: #795da3; }
+  color: #61aeee; }
 
 .highlight.swift .built_in,
 .highlight.swift .number,
@@ -1273,7 +1300,7 @@ figure.highlight,
 .highlight.yml .type,
 .highlight.yml .literal,
 .highlight.yml .meta {
-  color: #183691; }
+  color: #98c379; }
 
 .highlight.yml .number {
   color: #0086b3; }
@@ -1335,12 +1362,18 @@ figure.highlight,
 
 /* table*/
 table {
-  margin: auto auto 15px;
+  margin: auto auto 50px;
   width: 100%;
   background: transparent;
   border-collapse: collapse;
   border-spacing: 0;
   text-align: left; }
+  table thead {
+    background: #009A61;
+    color: #fff;
+    border-bottom: none; }
+    table thead tr th {
+      border: none; }
   table th {
     font-weight: bold;
     padding: 5px 10px;
@@ -1348,7 +1381,7 @@ table {
   table td {
     padding: 5px 10px; }
   table tr:nth-child(2n) {
-    background: #f7f8f8; }
+    background: rgba(217, 245, 234, 0.933); }
 
 /* article-share*/
 .article-share-link {
@@ -1493,3 +1526,58 @@ em.search-keyword {
   list-style: none; }
   .post-copyright li {
     margin: 8px 0; }
+
+figure.highlight .code {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34;
+  font-family: monospace; }
+  figure.highlight .code .comment,
+  figure.highlight .code .quote {
+    color: #5c6370;
+    font-style: italic; }
+  figure.highlight .code .doctag,
+  figure.highlight .code .keyword,
+  figure.highlight .code .formula {
+    color: #c678dd; }
+  figure.highlight .code .section,
+  figure.highlight .code .name,
+  figure.highlight .code .selector-tag,
+  figure.highlight .code .deletion,
+  figure.highlight .code .subst {
+    color: #e06c75; }
+  figure.highlight .code .literal {
+    color: #56b6c2; }
+  figure.highlight .code .string,
+  figure.highlight .code .regexp,
+  figure.highlight .code .addition,
+  figure.highlight .code .attribute,
+  figure.highlight .code .meta-string {
+    color: #98c379; }
+  figure.highlight .code .built_in,
+  figure.highlight .code .class .title {
+    color: #e6c07b; }
+  figure.highlight .code .attr,
+  figure.highlight .code .variable,
+  figure.highlight .code .template-variable,
+  figure.highlight .code .type,
+  figure.highlight .code .selector-class,
+  figure.highlight .code .selector-attr,
+  figure.highlight .code .selector-pseudo,
+  figure.highlight .code .number {
+    color: #d19a66; }
+  figure.highlight .code .symbol,
+  figure.highlight .code .bullet,
+  figure.highlight .code .link,
+  figure.highlight .code .meta,
+  figure.highlight .code .selector-id,
+  figure.highlight .code .title {
+    color: #61aeee; }
+  figure.highlight .code .emphasis {
+    font-style: italic; }
+  figure.highlight .code .strong {
+    font-weight: bold; }
+  figure.highlight .code .link {
+    text-decoration: underline; }
